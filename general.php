@@ -156,9 +156,7 @@
     <?php include('section/footer.php'); ?>
     <!-- /.footer -->
 
-    <!-- Scripts -->
-    <script src="../assets/js/page.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+
 
   </body>
 </html>

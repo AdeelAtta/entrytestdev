@@ -19,3 +19,7 @@
         </div>
       </div>
     </footer><!-- /.footer -->
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
