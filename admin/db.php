@@ -8,7 +8,7 @@ $db_name     = 'entrytest';
 $connection = mysqli_connect($server_name,$server_user,$server_pass,$db_name);
 
 
-if($connection){
-    echo "Successfull";
+if(!$connection){
+    echo mysqli_error($connection);
 }
 ?>

@@ -25,6 +25,7 @@
   </head>
   <body>
 
+  <?php include 'admin/db.php'; ?>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
@@ -115,26 +116,16 @@
             <div class="col-md-6 col-xl-4">
               <h6 class="fw-500">Preparation</h6>
               <ul class="list-unstyled lead">
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Introduction</a>
-                </li>
-
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Contents</a>
-                </li>
-
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Basic starter</a>
-                </li>
-
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Expert starter</a>
-                </li>
-
+              <?php 
+              $query = "SELECT * FROM topic limit 3 ";
+              $result = mysqli_query($connection,$query);
+                if(mysqli_num_rows($result) > 0){
+                    while($row = mysqli_fetch_array($result)){ ?>
+                      <li>
+                        <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
+                        <a class="text-inherit" href="preparation.php"><?php echo $row['topic_name']; ?></a>
+                      </li>
+                  <?php  } }   ?>
               </ul>
             </div>
 

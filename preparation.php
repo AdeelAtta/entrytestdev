@@ -53,9 +53,11 @@
           | Content
           |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
           !-->
-          <div class="col-md-7 col-xl-8 ml-md-auto py-8">
+           <div class="col-md-7 col-xl-8 ml-md-auto py-8">
             <article>
 
+            <!-- Div remove
+            <div>
               <h1>Introduction</h1>
               <p class="lead">In this article, we help you to start and configure your project by creating a copy of thedocs. Make sure you've read the <a href="kb-contents.html">contents</a> article before continuing.</p>
 
@@ -84,9 +86,15 @@
               <h2 id="develop">Develop</h2>
               <p>Now you're ready to start creating your pages. We've already implemented several common pages such as about, contact, privacy policy, faq, etc. and several sample homepages for your next website such as Gmail, Trello, Bootstrap, GitHub, etc. You can keep the pages you need and modify their content, or copy one of the html files and use ready blocks to create your own pages.</p>
               <p>You can find a lot of ready blocks in the <em>/block directory</em>. Finally, for more advanced users, you can read the documentation in <em>/uikit directory</em> to learn about the elements, components and fundamentals of thedocs and create your own customized blocks.</p>
+            </div>
+             div remove -->
+             <?php include('section/article.php'); ?>
 
+            
+            
             </article>
-          </div>
+          </div> 
+          
 
 
         </div>

@@ -178,7 +178,7 @@
 
             <!-- UNI & test type -->
             <div class="form-group col-sm-6 col-xl-3">
-            <select name="subUniId" id="uni" class="form-control form-control-lg">
+            <select name="topicSubId" id="uni" class="form-control form-control-lg">
               <?php 
               $query = "Select * from university";
               $result = mysqli_query($connection,$query);
@@ -207,6 +207,7 @@
               <button class="btn btn-xl btn-block btn-primary" type="submit">ADD Topic</button>
             </div>
           </form>
+
           <script src="ckeditor/ckeditor.js"></script>
         <script>
             CKEDITOR.replace('Article_editor');

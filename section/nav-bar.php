@@ -17,23 +17,23 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link" href="#">Entry Test Preparation<span class="arrow"></span></a>
+      <a class="nav-link" href="">Entry Test Preparation<span class="arrow"></span></a>
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link" href="#">Preparation <span class="arrow"></span></a>
           <nav class="nav">
-            <a class="nav-link" href="preparation.php?s=en">English</a>
-            <a class="nav-link" href="preparation.php?s=gk">GK</a>
-            <a class="nav-link" href="preparation.php?s=gs">General Science</a>
-            <a class="nav-link" href="preparation.php?s=ma">Mathematics</a>
-            <a class="nav-link" href="preparation.php?s=iq">IQ</a>
+            <a class="nav-link" href="preparation.php?s=2">English</a>
+            <a class="nav-link" href="preparation.php?s=3">GK</a>
+            <a class="nav-link" href="preparation.php?s=4">General Science</a>
+            <a class="nav-link" href="preparation.php?s=5">Mathematics</a>
+            <a class="nav-link" href="preparation.php?s=6">IQ</a>
           </nav>
         </li>
-     
+<!--      
         <li class="nav-item">
           <a class="nav-link" href="#">Quizez <span class="arrow"></span></a>
           <nav class="nav">
-            <a class="nav-link" href="quiz.php?s=en">English</a>
+            <a class="nav-link" href="quiz.php?s=">English</a>
             <a class="nav-link" href="quiz.php?s=gk">GK</a>
             <a class="nav-link" href="quiz.php?s=gs">General Science</a>
             <a class="nav-link" href="quiz.php?s=ma">Mathematics</a>
@@ -50,7 +50,7 @@
             <a class="nav-link" href="#">2017</a>
             <a class="nav-link" href="#">2016</a>
           </nav>
-        </li>
+        </li> -->
 
       </ul>
     </li>
