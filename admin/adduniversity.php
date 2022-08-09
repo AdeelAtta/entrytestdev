@@ -1,6 +1,5 @@
 <?php 
-if(isset($_GET['uniName']) && isset($_GET['uniShort'])){
-
+if(isset($_POST['uniName']) && isset($_POST['uniShort'])){
 
 
 include 'db.php';
@@ -15,6 +14,7 @@ if(mysqli_num_rows($result) > 0){
 
 $query = "INSERT INTO university(uni_name, uni_short) VALUES('{$uniName}','{$uniShort}')";
 if(mysqli_query($connection,$query)){
+    
     header( "Location: ../adminpanel.php?uniadded" );
 }else{
     echo mysqli_error($connection);
