@@ -1,3 +1,10 @@
+<?php 
+session_start();
+if(!isset($_SESSION['email'])){
+  header('Location: login.php?invalid');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -158,7 +165,7 @@
        <!-- Add Topic/Article -->
       <section class="section p-5 mt-5 ">
         <div class="container">
-          <form class="form-row" action="admin/addtopic.php" method="POST" enctype="multipart/form-data">
+          <form class="form-row" action="admin/addtopic.php" method="POST" >
           <legend>Add Topic</legend> 
           <?php if(isset($_GET['topicAdded'])){ ?> 
           <div class="col-12">
