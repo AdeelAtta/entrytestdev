@@ -117,7 +117,7 @@
               <h6 class="fw-500">Preparation</h6>
               <ul class="list-unstyled lead">
               <?php 
-              $query = "SELECT * FROM topic limit 3 ";
+              $query = "SELECT * FROM topic ";
               $result = mysqli_query($connection,$query);
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_array($result)){ ?>
@@ -133,7 +133,7 @@
             <div class="col-md-6 col-xl-4">
               <h6 class="fw-500">Quiz</h6>
               <ul class="list-unstyled lead">
-                <li>
+                <!-- <li>
                   <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
                   <a class="text-inherit" href="#">Typography</a>
                 </li>
@@ -151,7 +151,7 @@
                 <li>
                   <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
                   <a class="text-inherit" href="#">Tables</a>
-                </li>
+                </li> -->
 
               </ul>
             </div>
@@ -160,7 +160,7 @@
             <div class="col-md-6 col-xl-4">
               <h6 class="fw-500">Past-Papers</h6>
               <ul class="list-unstyled lead">
-                <li>
+                <!-- <li>
                   <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
                   <a class="text-inherit" href="#">Buttons</a>
                 </li>
@@ -178,7 +178,7 @@
                 <li>
                   <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
                   <a class="text-inherit" href="#">Palette</a>
-                </li>
+                </li> -->
 
               </ul>
             </div>

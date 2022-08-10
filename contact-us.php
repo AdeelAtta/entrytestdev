@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>Contact - Tick2Top</title>
+    <title>Tick2Top - Contact Us Form</title>
 
     <!-- Styles -->
     <link href="assets/css/page.min.css" rel="stylesheet">
@@ -19,9 +19,6 @@
 
   <body> 
 
-
-
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <?php include('section/nav-bar.php'); ?>
@@ -31,8 +28,6 @@
 
     <!-- Main Content -->
     <main class="main-content">
-
-
       <section class="section pt-10">
         <div class="container">
           <header class="section-header">
@@ -81,8 +76,6 @@
 
         </div>
       </section>
-
-
     </main><!-- /.main-content -->
 
 

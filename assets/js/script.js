@@ -25,7 +25,7 @@ $(function() {
     |
     */
 
-    //googleAnalyticsId: 'abcdef//UA-73325209-2',
+    googleAnalyticsId: 'UA-73325209-2',
 
     /*
     |--------------------------------------------------------------------------
@@ -56,6 +56,40 @@ $(function() {
   |
   */
 
+  $.getScript('https://www.googletagmanager.com/gtag/js?id=AW-864788073');
   
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-864788073/SK3PCMCPsZMBEOm8rpwD',
+        'event_callback': callback
+    });
+    return false;
+  }
+  
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-864788073');
+  
+  $('a[href*="https://themeforest.net"]').on('click', function() {
+    ga('send', 'event', {
+      eventCategory: 'TheDocs - Buy',
+      eventAction: 'Click',
+      eventLabel: 'Buy',
+      transport: 'beacon'
+    });
+    gtag_report_conversion ();
+  });
+
 
 });
+
+
+//!function(e,t,n,s,u,a){e.formito_form='12m';u=t.createElement(n),u.async=!0,u.src='//script.formito.com/v1/formito.js',a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a)}(window,document,'script');
+
+!function(t,d,e,i,n){(n=d.body).insertAdjacentHTML("beforeend",`<div data-formito-id="Pwda0OTXDKR0cTbdOZfP" data-trigger="fab" data-button-icon="https://s.formito.com/img/icon-fab/7.png" data-message-title="Hi there 👋" data-message-text="We're right here if you need more info, documentation, or support."></div>`),(i=d.createElement("script")).async=!0,i.src="https://s.formito.com/ft.js",n.appendChild(i)}(window,document);

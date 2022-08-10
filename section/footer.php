@@ -6,7 +6,7 @@
           <div class="col-md-9">
             <div class="nav justify-content-center justify-content-md-start">
               <a class="nav-link" href="index.php">Home</a>
-              <a class="nav-link" href="#">About us</a>
+
               <a class="nav-link" href="contact-us.php">Contact Us</a>
               <a class="nav-link" href="terms.php">Terms</a>
 
