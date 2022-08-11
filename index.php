@@ -117,13 +117,13 @@
               <h6 class="fw-500">Preparation</h6>
               <ul class="list-unstyled lead">
               <?php 
-              $query = "SELECT * FROM topic ";
+              $query = "SELECT * FROM topic order by topic_id desc limit 5";
               $result = mysqli_query($connection,$query);
                 if(mysqli_num_rows($result) > 0){
                     while($row = mysqli_fetch_array($result)){ ?>
                       <li>
                         <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                        <a class="text-inherit" href="preparation.php"><?php echo $row['topic_name']; ?></a>
+                        <a class="text-inherit" href="preparation.php?s=<?php echo $row['topic_sub_id']; ?>&t=<?php echo $row['topic_id']; ?>"><?php echo $row['topic_name']; ?></a>
                       </li>
                   <?php  } }   ?>
               </ul>
@@ -208,7 +208,7 @@
           <div class="row gap-y">
 
             <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="https://chat.whatsapp.com/FCyhWHPUQAiJSJBd11hFQQ" target="_blank">
                 <p><i class="fa fa-whatsapp lead-7 text-lighter"></i></p>
                 <h6 class="mb-0 mt-3">Whatsapp</h6>
               </a>
@@ -224,7 +224,7 @@
 
 
             <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="mailto:admin@tick2top.com">
                 <p><i class="fa fa-envelope lead-7 text-lighter"></i></p>
                 <h6 class="mb-0 mt-3">Email Us</h6>
               </a>
@@ -232,9 +232,9 @@
 
 
             <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="#">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="https://www.facebook.com/Tick2TopOfficial" target="_blank">
                 <p><i class="fa fa-facebook lead-7 text-lighter"></i></p>
-                <h6 class="mb-0 mt-3">Facebook Group</h6>
+                <h6 class="mb-0 mt-3">Facebook</h6>
               </a>
             </div>
 

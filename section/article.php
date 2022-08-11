@@ -9,11 +9,13 @@ if( isset($_GET['t'])){
     while($row = mysqli_fetch_array($result)){
       echo html_entity_decode($row['topic_data']);
     }}else{
-    $query = "SELECT topic_data FROM topic limit 1" ;
+    $query = "SELECT * FROM topic limit 1" ;
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result) > 0){
       while($row = mysqli_fetch_array($result)){
         echo html_entity_decode($row['topic_data']);
+
+
       }}
 
     }
