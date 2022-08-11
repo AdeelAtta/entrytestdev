@@ -42,8 +42,9 @@
               </nav>
             </li>
 
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Quizez 
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#">MCQs 
                 <span class="arrow">
                 </span>
               </a>
@@ -60,6 +61,7 @@
                 </a>
               </nav>
             </li>
+             <!--
             <li class="nav-item">
               <a class="nav-link" href="#">Past-Papers 
                 <span class="arrow">

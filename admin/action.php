@@ -31,7 +31,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 
 }else{
 
-    echo "<script>location.href='../login.php?invalid'</script>";
+    echo "<script>location.href='../login.php'</script>";
 }
 
 

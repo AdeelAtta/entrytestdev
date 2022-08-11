@@ -71,8 +71,8 @@
             <div class="col-md-4">
               <a class="card px-6 py-8 shadow-11 hover-shadow-9 text-default border" href="#">
                 <p><i class="ti-book lead-7 text-primary"></i></p>
-                <h5 class="fw-500 my-4">100+ Quiz Tests</h5>
-                <p class="mb-0">Get start your preparation and Solve the Quiz of each Section.</p>
+                <h5 class="fw-500 my-4">100+ MCQS</h5>
+                <p class="mb-0">Get start your preparation and Solve the MCQs of each Section.</p>
               </a>
             </div>
 
