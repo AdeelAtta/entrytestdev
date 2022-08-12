@@ -34,7 +34,7 @@ include 'admin/db.php';
                                 $r = mysqli_query($connection,$q);
                                 if(mysqli_num_rows($r) > 0){
                                   while($topic = mysqli_fetch_array($r)){  $tcount++ ?>
-                                    <a class="nav-link <?php if((!$topic && $tcount == 1)  or ($topic < 0 && $tcount == 1) ){ echo "active"; }else if($topic ==  $row['topic_id']  ){echo "active"; } ?>" href="preparation.php?s=<?php echo $row['sub_id'];?>&t=<?php echo $topic['topic_id']; ?>"><?php echo $topic['topic_name']; ?></a>
+                                    <a class="nav-link <?php if((!$topic && $tcount == 1)  or ($topic < 0 && $tcount == 1) ){ echo "active"; }else if($topic ==  $row['topic_id']  ){echo "active"; } ?>" href="preparation.php?s=<?php echo $row['sub_id'];?>&t=<?php echo $topic['topic_name']; ?>"><?php echo $topic['topic_name']; ?></a>
                                 <?php } } ?>
                           </div>
                       </li>

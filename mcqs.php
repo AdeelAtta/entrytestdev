@@ -73,7 +73,7 @@ include 'admin/db.php';
                         while($row = mysqli_fetch_array($result)){  $scount++;?>
                           
                         <li class="nav-item">
-                          <a class="nav-link  <?php if((!$subject && $scount == 1)  or ($subject < 0 && $scount == 1) ){ echo "active"; }else if($subject ==  $row['sub_id']  ){echo "active"; } ?>  " href="mcqs.php?s=<?php echo $row['sub_id']; ?>"><?php echo $row['sub_name']; ?></a>
+                          <a class="nav-link  <?php if((!$subject && $scount == 1)  or ($subject < 0 && $scount == 1) ){ echo "active"; }else if($subject ==  $row['sub_id']  ){echo "active"; } ?>  " href="mcqs.php?s=<?php echo $row['sub_name']; ?>"><?php echo $row['sub_name']; ?></a>
                       </li>
 
                       <?php  }  } ?>

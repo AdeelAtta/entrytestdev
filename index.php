@@ -123,36 +123,34 @@
                     while($row = mysqli_fetch_array($result)){ ?>
                       <li>
                         <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                        <a class="text-inherit" href="preparation.php?s=<?php echo $row['topic_sub_id']; ?>&t=<?php echo $row['topic_id']; ?>"><?php echo $row['topic_name']; ?></a>
+                        <a class="text-inherit" href="preparation.php?s=<?php echo $row['topic_sub_id']; ?>&t=<?php echo $row['topic_name']; ?>"><?php echo $row['topic_name']; ?></a>
                       </li>
                   <?php  } }   ?>
               </ul>
             </div>
 
-
             <div class="col-md-6 col-xl-4">
-              <h6 class="fw-500">Quiz</h6>
+              <h6 class="fw-500">Mcqs</h6>
               <ul class="list-unstyled lead">
-                <!-- <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Typography</a>
-                </li>
+              <?php 
+              $query = "SELECT * FROM mcqbag order by mcqbag_id desc limit 5";
+              $result = mysqli_query($connection,$query);
+                if(mysqli_num_rows($result) > 0){
+                    while($row = mysqli_fetch_array($result)){ 
+                      $q = "SELECT sub_name FROM subject where sub_id = {$row['mcqbag_sub_id']} ";
+                      $r = mysqli_query($connection,$q);
+                      if(mysqli_num_rows($r) > 0){
+                        while($subject = mysqli_fetch_array($r)){ ?>
 
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Code</a>
-                </li>
+                        <li>
+                        <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
+                        <a class="text-inherit" href="mcqs.php?s=<?php echo $subject['sub_name']; ?>"><?php echo $subject['sub_name']; ?></a>
+                      </li>
 
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Icons</a>
-                </li>
-
-                <li>
-                  <i class="fa fa-caret-right text-primary small-1 mr-2"></i>
-                  <a class="text-inherit" href="#">Tables</a>
-                </li> -->
-
+                    <?php  }
+                      
+                      
+                   } } }  ?>
               </ul>
             </div>
 

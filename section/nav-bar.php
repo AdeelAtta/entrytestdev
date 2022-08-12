@@ -49,15 +49,15 @@
                 </span>
               </a>
               <nav class="nav">
-                <a class="nav-link" href="quiz.php?s=">English
+                <a class="nav-link" href="mcqs.php?s=2">English
                 </a>
-                <a class="nav-link" href="quiz.php?s=gk">GK
+                <a class="nav-link" href="mcqs.php?s=3">GK
                 </a>
-                <a class="nav-link" href="quiz.php?s=gs">General Science
+                <a class="nav-link" href="mcqs.php?s=4">General Science
                 </a>
-                <a class="nav-link" href="quiz.php?s=ma">Mathematics
+                <a class="nav-link" href="mcqs.php?s=5">Mathematics
                 </a>
-                <a class="nav-link" href="quiz.php?s=iq">IQ
+                <a class="nav-link" href="mcqs.php?s=6">IQ
                 </a>
               </nav>
             </li>
