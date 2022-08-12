@@ -18,7 +18,6 @@ if( isset($_GET['s'])){
     }}else{ ?>
 
 <section class="section text-center">
-
 <h2 class="display-2 text-muted my-7">No Data Found</h2>
 <p class="lead">Here is the available list of Subjects. </p>
 <br>
