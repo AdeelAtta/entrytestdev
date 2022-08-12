@@ -49,39 +49,18 @@
                 </span>
               </a>
               <nav class="nav">
-                <a class="nav-link" href="mcqs.php?s=2">English
+                <a class="nav-link" href="mcqs.php?s=English">English
                 </a>
-                <a class="nav-link" href="mcqs.php?s=3">GK
+                <a class="nav-link" href="mcqs.php?s=General Knowledge">GK
                 </a>
-                <a class="nav-link" href="mcqs.php?s=4">General Science
+                <a class="nav-link" href="mcqs.php?s=General Science">General Science
                 </a>
-                <a class="nav-link" href="mcqs.php?s=5">Mathematics
+                <a class="nav-link" href="mcqs.php?s=Simple Mathematics">Mathematics
                 </a>
-                <a class="nav-link" href="mcqs.php?s=6">IQ
+                <a class="nav-link" href="mcqs.php?s=Intelligent Quotient">IQ
                 </a>
               </nav>
             </li>
-             <!--
-            <li class="nav-item">
-              <a class="nav-link" href="#">Past-Papers 
-                <span class="arrow">
-                </span>
-              </a>
-              <nav class="nav">
-                <a class="nav-link" href="#">2020
-                </a>
-                <a class="nav-link" href="#">2019
-                </a>
-                <a class="nav-link" href="#">2018
-                </a>
-                <a class="nav-link" href="#">2017
-                </a>
-                <a class="nav-link" href="#">2016
-                </a>
-              </nav>
-            </li>  -->
-
-            
           </ul>
         </li>
         <li class="nav-item">

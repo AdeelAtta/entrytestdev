@@ -17,37 +17,24 @@ if( isset($_GET['s'])){
       echo html_entity_decode($row['mcqbag_data']);
     }}else{ ?>
 
-      <section class="section text-center">
+<section class="section text-center">
 
-      <h1 class="display-1 text-muted my-7">No data Found</h1>
-     
-      <p class="lead">Here is the available list of Subjects. </p>
-      <br>
-      <a class="btn btn-info w-auto" href="">English</a><br><br>
-      <a class="btn btn-info w-auto" href="">General Knowledge</a> <br><br>
-      <a class="btn btn-info w-auto" href="">General Science</a> <br><br>
-      <a class="btn btn-info w-auto" href="">Simple Arithmetic</a><br><br>
-      <a class="btn btn-info w-auto" href="">Intelligent Quotient</a> <br>
-      <br>
-      <p class="lead">We will upload other data soon.</p>
+<h2 class="display-2 text-muted my-7">No Data Found</h2>
+<p class="lead">Here is the available list of Subjects. </p>
+<br>
+<?php 
+ $query = "SELECT sub_name FROM subject ";
+ $result = mysqli_query($connection,$query);
+ if(mysqli_num_rows($result) > 0 ){
+    while($row = mysqli_fetch_array($result)){ ?>
+        <a class="btn btn-info w-auto" href="mcqs.php?s=<?php echo $row['sub_name'];?>"><?php echo $row['sub_name'];?></a><br><br>
+      <?php    } } ?>
+  <p class="lead">We will upload other data soon.</p>
+</section>
 
-    </section>
-
-   <?php } 
-   
-  
-  
-  
-  }  }
-
-
-
-
-
-
-
-
-
+   <?php }    
+                                                }  
+                                  }
 
 
 
@@ -55,23 +42,18 @@ if( isset($_GET['s'])){
 
 <section class="section text-center">
 
-<h1 class="display-2 text-muted my-7">Select Subject for Mcqs</h1>
-
+<h2 class="display-2 text-muted my-7">Select Subject for Mcqs</h2>
 <br>
-<a class="btn btn-info w-auto" href="mcqs.php?s=2">English</a><br><br>
-<a class="btn btn-info w-auto" href="mcqs.php?s=3">General Knowledge</a> <br><br>
-<a class="btn btn-info w-auto" href="mcqs.php?s=4">General Science</a> <br><br>
-<a class="btn btn-info w-auto" href="mcqs.php?s=5">Simple Arithmetic</a><br><br>
-<a class="btn btn-info w-auto" href="mcqs.php?s=6">Intelligent Quotient</a> <br>
-<br>
-<p class="lead">We will upload other data soon.</p>
-
+<?php 
+ $query = "SELECT sub_name FROM subject ";
+ $result = mysqli_query($connection,$query);
+ if(mysqli_num_rows($result) > 0 ){
+    while($row = mysqli_fetch_array($result)){ ?>
+        <a class="btn btn-info w-auto" href="mcqs.php?s=<?php echo $row['sub_name'];?>"><?php echo $row['sub_name'];?></a><br><br>
+      <?php    } } ?>
+  <p class="lead">We will upload other data soon.</p>
 </section>
 
 
 
-<?php }
-
-
-
-?>
+<?php } ?>

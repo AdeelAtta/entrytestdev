@@ -1,6 +1,4 @@
-<?php 
-include 'section/functions.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
