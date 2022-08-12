@@ -4,3 +4,4 @@ CREATE TABLE entrytest.test(test_id int(3) PRIMARY KEY AUTO_INCREMENT, test_name
 CREATE TABLE entrytest.subject(sub_id int(3) PRIMARY KEY AUTO_INCREMENT, sub_name varchar(255) NOT NULL, sub_test_id int(3) NOT NULL, FOREIGN KEY(sub_test_id) REFERENCES test(test_id));
 CREATE TABLE entrytest.topic(topic_id int(3) PRIMARY KEY AUTO_INCREMENT, topic_name varchar(255) NOT NULL,topic_data text ,topic_sub_id int(3) NOT NULL, FOREIGN KEY(topic_sub_id) REFERENCES subject(sub_id)); 
 CREATE TABLE entrytest.amn(email varchar(255) UNIQUE NOT NULL,password varchar(255) NOT NULL);
+CREATE TABLE mcqbag(mcqbag_id int(3) PRIMARY KEY AUTO_INCREMENT, mcqbag_data longtext NOT NULL, mcqbag_sub_id int(3) NOT NULL, foreign key(mcqbag_sub_id) references subject(sub_id));

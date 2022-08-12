@@ -90,7 +90,7 @@ include 'admin/db.php';
           !-->
            <div class="col-md-7 col-xl-8 ml-md-auto py-8">
             <article onselectstart="return false" onpaste="return false;" onCopy="return false " onCut="return false" onDrag="return false" onDrop="return false">
-             <?php include('section/.php'); ?>
+             <?php include('section/mcqbag.php'); ?>
             </article>
           </div> 
           

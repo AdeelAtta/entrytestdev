@@ -221,7 +221,82 @@ if(!isset($_SESSION['email'])){
         </script>
         </div>
       </section>
+
+
       <hr class="border border-primary border-2 opacity-50">
+
+
+
+
+
+
+       <!-- Add Topic/Article -->
+       <section class="section p-5 mt-5 ">
+        <div class="container">
+          <form class="form-row" action="admin/addmcqs.php" method="POST" >
+          <legend>Add MCQs</legend> 
+          <?php if(isset($_GET['McqsAdded'])){ ?> 
+          <div class="col-12">
+                <div class="alert alert-success d-on-success">MCQsss Added Successfully</div>
+            </div>
+          <?php }elseif(isset($_GET['mcqsAlreadyExist'])) {?> 
+          <div class="col-12">
+            <div class="alert alert-danger d-on-success">MCQs Already Exist</div>
+          </div>
+        <?php  } ?>
+
+
+            <!-- UNI & test type -->
+            <div class="form-group col-sm-6 col-xl-3">
+            <select name="mcqbagSubId" id="uni" class="form-control form-control-lg">
+              <?php 
+              $query = "Select * from university";
+              $result = mysqli_query($connection,$query);
+              while($row = mysqli_fetch_array($result)){
+                $quer = "SELECT * FROM test WHERE test_uni_id = {$row['uni_id']} ";
+                $res = mysqli_query($connection,$quer);
+                while($test = mysqli_fetch_array($res)){ 
+                  
+                  $q = "SELECT * FROM subject WHERE sub_test_id = {$test['test_id']} " ;
+                  $r = mysqli_query($connection,$q);
+                  while($sub = mysqli_fetch_array($r)){  ?>
+                 <option value="<?php echo $sub['sub_id']; ?>"><?php echo $sub['sub_name'].' '.$row['uni_short'].'('.$test['test_name'].')'; ?></option>
+               <?php } } } ?>   
+            </select>
+            </div>
+
+
+            <div class="form-group col-12">
+              <textarea id="editor" class="form-control form-control-lg" rows="4" placeholder="Message" name="mcqbagData"></textarea>
+            </div>
+
+
+
+           
+            <div class="col-12 text-center">
+              <button class="btn btn-xl btn-block btn-primary" type="submit">ADD MCQs</button>
+            </div>
+          </form>
+
+          <script src="ckeditor/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace('editor');
+        </script>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
