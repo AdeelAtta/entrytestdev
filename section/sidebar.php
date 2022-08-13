@@ -16,8 +16,8 @@ include 'admin/db.php';
 
 <div class="col-md-4 col-xl-3 order-last order-md-first">
             <hr class="d-md-none">
-            <aside class="sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1">
-              <ul class="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
+            <aside class="sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1 "  style=" height:auto;">
+              <ul class="nav nav-sidebar nav-sidebar-hero " data-accordion="true">
                 
 
                 <?php $query = "SELECT * FROM subject where sub_test_id = 1  ";

@@ -30,7 +30,7 @@
     <header class="header" style="background-color: #f1f6fa">
       <div class="container-sm">
         <h1>Terms of use</h1>
-        <p class="lead">Last update: August 17, 2022</p>
+        <p class="lead">Last update: August 14, 2022</p>
       </div>
     </header><!-- /.header -->
 
@@ -79,7 +79,7 @@
 
           <br>
           <h4>Question</h4>
-          <p>Any questions about this Privacy Policy should be addressed to privacy@domain.com.</p>
+          <p>Any questions about this Privacy Policy should be addressed to admin@tick2top.com</p>
 
         </div>
       </section>

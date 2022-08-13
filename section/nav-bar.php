@@ -77,9 +77,10 @@ if(isset($_SESSION['email'])){ ?>
         </li>
 <?php } ?>
       </ul>
-    </section>
-    <a class="btn btn-sm btn-round btn-outline-light ml-auto mr-auto mt-2" href="https://chat.whatsapp.com/FCyhWHPUQAiJSJBd11hFQQ" target="_blank">
+      <a class="btn btn-sm btn-round btn-outline-light ml-auto mr-auto mt-2"  href="https://chat.whatsapp.com/FCyhWHPUQAiJSJBd11hFQQ" target="_blank">
       <i class="fa fa-whatsapp lead-7 text-lighter ">
       </i>
     </a>
+    </section>
+
   </div>
