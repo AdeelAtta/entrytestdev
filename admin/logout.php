@@ -2,7 +2,8 @@
 session_start();
 
 if(isset($_SESSION['email'])){
-    $_SESSION['email'] = null;
+
+    $_SESSION['userName'] = $_SESSION['email'] =  $_SESSION['auth']  = null;
 
 }
 

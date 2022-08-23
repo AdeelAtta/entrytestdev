@@ -10,11 +10,24 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result) > 0 ){
         while($row = mysqli_fetch_array($result)){
-            if($password == $row['password']){
+            if($password == $row['password'] && $row['auth'] == 'admin'){
 
                     session_start();
+ 
                     $_SESSION['email'] = $row['email'];
+                    $_SESSION['userName'] = $row['userName'];
+                    $_SESSION['auth']  = $row['auth'];
                     header("Location: ../adminpanel.php");
+            }else if($password == $row['password'] ){
+               
+                session_start();
+
+                $_SESSION['email'] = $row['email'];
+                $_SESSION['userName'] = $row['userName'];
+                $_SESSION['auth']  = $row['auth'];
+                header("Location: ../adminpanel.php?user");
+
+
             }else{
                 echo "<script>location.href='../login.php?invalid'</script>";
             }

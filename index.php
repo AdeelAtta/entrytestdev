@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PHF2XJR');</script>
+<!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Tick 2 Top is a single platform smart solution for Entry Test preparation for University of Sindh ">
+    <meta name="keywords" content="sindh university prep, sindh uni test, sindh uni pastpaper , sindh uni entry test, sindh university , university of sindh , entrytest 2020 , entry test 2021 ">
 
     <title>Tick 2 Top - Entry Tests Preparation</title>
 
@@ -25,8 +32,13 @@
   </head>
   <body>
 
+
   <?php include 'admin/db.php'; ?>
 
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHF2XJR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
       <?php include('section/nav-bar.php'); ?>

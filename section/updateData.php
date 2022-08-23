@@ -75,7 +75,7 @@ $topicID = $_POST['updateTopicId'] ;
        <hr><hr><hr>
        <section class="section p-5 mt-5 ">
         <div class="container">
-          <form class="form-row" action="admin/updatemcqs.php" method="POST" >
+          <form class="form-row" action="admin/updateMcqs.php" method="POST" >
           <legend>update Topic</legend> 
 
 

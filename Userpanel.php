@@ -2,10 +2,10 @@
 session_start();
 if(!isset($_SESSION['email'] )){
   header('Location: login.php?invalid');
-}else if($_SESSION['auth'] == 'user'){
+}else if($_SESSION['auth'] == 'admin'){
 
 
-  header('Location: userpanel.php');
+  header('Location: adminpanel.php');
 
 }
 ?>
@@ -18,7 +18,7 @@ if(!isset($_SESSION['email'] )){
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>Admin panel - Tick2Top</title>
+    <title> Welcome - Tick2Top</title>
 
     <!-- Styles -->
     <link href="assets/css/page.min.css" rel="stylesheet">
@@ -34,30 +34,33 @@ if(!isset($_SESSION['email'] )){
 
 
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
-      <?php include('section/nav-bar.php'); ?>
-    </nav>
-    <!-- /.navbar -->
-
-
     <!-- Main Content -->
     <main class="main-content" >
 
 
 
-    <?php if(isset($_GET['update'])){
-              include 'section/updateData.php' ;
-
-
-    }else{  include 'section/addData.php'; }?>
+<br><br><br>
 
 
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,6 +13,27 @@ if( isset($_GET['s'])){
     $query = "SELECT mcqbag_data FROM mcqbag where mcqbag_sub_id = {$subject['sub_id']}" ;
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result) > 0){
+        
+        ?>
+
+      <div class="sect"> 
+        <div class="wrap">    
+
+     <?php 
+      $qu = "SELECT * FROM topic WHERE topic_sub_id = {$subject['sub_id']} ";
+      $re = mysqli_query($connection,$qu);
+      if(mysqli_num_rows($re) > 0){
+        while($sub_topic = mysqli_fetch_array($re)){ ?>
+
+          <a class="btn m-1 d-block" href="mcqs.php?s=<?php echo $mcqbag;?>#<?php echo strtolower(str_replace(' ', '', $sub_topic['topic_name'])); ?>"><?php echo $sub_topic['topic_name']; ?></a>
+       <?php }} ?>
+       </div>
+       </div>
+
+
+     <?php 
+        
+        
     while($row = mysqli_fetch_array($result)){
       echo html_entity_decode($row['mcqbag_data']);
     }}else{ ?>

@@ -22,11 +22,7 @@
 
 
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark" data-navbar="sticky">
-      <?php include('section/nav-bar.php'); ?>
-    </nav>
-    <!-- /.navbar -->
+
 
 
 

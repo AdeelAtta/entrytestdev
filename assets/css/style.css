@@ -51,5 +51,52 @@
     border-color: #3d1460;
   }
   
+  
+   
+
+.sect{
+  width: 100%;
+ height: 100%;
+  position: sticky;
+  top:1px;
+  font-weight: bolder;
+}
+
+  .wrap{
+    max-width:10%;
+    max-height:80vh;
+    position: absolute;
+    top:10vh;
+    right: 0px;
+    opacity: 0.3;
+    transition: max-width 0.8s, opacity 0.8s;
+    overflow: hidden;
+     border-right: 4px solid #3d1460; 
+     
+    
+   
+  }
+  
+   .wrap:hover{
+    overflow-y: scroll;
+    max-width:35%;
+    opacity:1;
+    
+  } 
+
+
+
+  .wrap a{
+    border : 2px solid #E0668B;
+    background-color: #E0668B;
+    color: white;
+
+  }
+    .wrap a:hover{
+    border : 2px solid #E0668B;
+    color: #E0668B;
+    background-color:white;
+  }
+  
 
 /*# sourceMappingURL=style.css.map */
