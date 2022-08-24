@@ -44,15 +44,17 @@ if(!isset($_SESSION['email'] )){
     <!-- Main Content -->
     <main class="main-content" >
 
-
+    
 
     <?php if(isset($_GET['update'])){
               include 'section/updateData.php' ;
-
-
-    }else{  include 'section/addData.php'; }?>
-
-
+          }else if(isset($_GET['addMcqs'])){
+              include 'section/addquiz.php' ;
+          }else if(isset($_GET['Students'])){
+            include 'section/Students.php' ;
+        }else{  
+              include 'section/addData.php'; 
+              }?>
 
 
 

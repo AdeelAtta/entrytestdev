@@ -1,3 +1,13 @@
+<section class="section p-5 mt-10 text-center" >
+        <div class="container">
+<a class="btn btn-primary" href="adminpanel.php">Add Data </a>
+<a class="btn btn-primary" href="adminpanel.php?addMcqs">Add Quiz </a>
+<a class="btn btn-primary" href="adminpanel.php?students">Students </a>
+
+      </div>
+</section>
+
+
 
 <?php if(isset($_POST['updateTopicId'])){
 
@@ -10,9 +20,12 @@ $topicID = $_POST['updateTopicId'] ;
 
 
        <!-- update Topic/Article -->
-       <hr><hr><hr>
+          <hr>
+
        <section class="section p-5 mt-5 ">
         <div class="container">
+
+
           <form class="form-row" action="admin/updateTopic.php" method="POST" >
           <legend>update Topic</legend> 
 
@@ -72,7 +85,7 @@ $topicID = $_POST['updateTopicId'] ;
 
 
        <!-- update Topic/Article -->
-       <hr><hr><hr>
+      
        <section class="section p-5 mt-5 ">
         <div class="container">
           <form class="form-row" action="admin/updateMcqs.php" method="POST" >
@@ -137,7 +150,7 @@ $topicID = $_POST['updateTopicId'] ;
 
 
 }else{ ?>
-<hr><hr><hr>
+<hr>
 <section class="section p-5 mt-5 ">
         <div class="container">
           <form class="form-row" action="adminpanel.php?update" method="POST" >

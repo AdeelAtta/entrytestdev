@@ -1,3 +1,12 @@
+<section class="section p-5 mt-10 text-center" >
+        <div class="container">
+<a class="btn btn-primary" href="adminpanel.php?update">Update Data </a>
+<a class="btn btn-primary" href="adminpanel.php?addMcqs">Add Quiz </a>
+<a class="btn btn-primary" href="adminpanel.php?students">Students </a>
+
+      </div>
+</section>
+
 
       <!-- Add University -->
       

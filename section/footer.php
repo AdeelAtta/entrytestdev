@@ -8,6 +8,7 @@
               <a class="nav-link" href="index.php">Home</a>
               <a class="nav-link" href="contact-us.php">Contact Us</a>
               <a class="nav-link" href="terms.php">Terms</a>
+              <a class="nav-link" href="login.php">Signup</a>
 
             </div>
           </div>

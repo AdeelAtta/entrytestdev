@@ -16,6 +16,8 @@ if(isset($_POST['email']) && isset($_POST['password'])){
  
                     $_SESSION['email'] = $row['email'];
                     $_SESSION['userName'] = $row['userName'];
+                    $_SESSION['city'] = $row['city'];
+
                     $_SESSION['auth']  = $row['auth'];
                     header("Location: ../adminpanel.php");
             }else if($password == $row['password'] ){
@@ -24,6 +26,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['userName'] = $row['userName'];
+                $_SESSION['city'] = $row['city'];
                 $_SESSION['auth']  = $row['auth'];
                 header("Location: ../adminpanel.php?user");
 
