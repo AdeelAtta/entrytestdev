@@ -163,7 +163,7 @@ if(isset($_SESSION['email'])){ ?>
           <input type="number" name="sub_id" value="<?php echo $row['sub_id']; ?>"  hidden />
 
         <?php
-        $q = "Select * FROM questions where q_sub_id = {$row['sub_id']} LIMIT 25";
+        $q = "Select * FROM questions where q_sub_id = {$row['sub_id']} order by RAND() LIMIT 30";
         $r = mysqli_query($connection,$q);
         
         if(mysqli_num_rows($r) > 0){
@@ -239,8 +239,8 @@ if(isset($_SESSION['email'])){ ?>
       <div class="text-center">
         <i class="far fa-file-alt fa-4x mb-3 text-primary"></i>
         <div class="alert alert-success">
-   Test Submitted <strong>Successfully!</strong> Result will be Announced Soon.
-</div>
+            Test Submitted <strong>Successfully!</strong> complete All tests <br>After completing All tests you can see results <a href="scoreboard/index.php">Here</a>.
+        </div>
       </div>
 
       
@@ -284,15 +284,18 @@ if(isset($_SESSION['email'])){ ?>
           <article onselectstart="return false" onpaste="return false;" onCopy="return false " onCut="return false" onDrag="return false" onDrop="return false">
             <div class="mx-0 mx-sm-auto text-center">
               <div class="row d-block w-100">
-                <?php if(isset($_GET['ScoreAdded'])){
+                <?php if(isset($_GET['ScoreAdded'])){ ?>
 
-                  echo "<script> alert('Test Submitted Successfully')</script>";
+                  <div class="text-center">
+        <i class="far fa-file-alt fa-4x mb-3 text-primary"></i>
+        <div class="alert alert-success">
+            Test Submitted <strong>Successfully!</strong> complete All tests <br>After completing All tests you can see results <a href="scoreboard/index.php">Here</a>.
+        </div>
+      </div>
 
 
-                } ?>
-                <div class="alert alert-warning">
-                  <strong>Select Subject</strong> to Attempt a Test.
-                </div>
+               <?php } ?>
+
                 <a class="btn btn-outline-info m-1" href="UserPanel.php?s=english" role="button">English</a>
                 <a class="btn btn-outline-info m-1" href="UserPanel.php?s=general knowledge" role="button">General Knowledge</a>
                 <a class="btn btn-outline-info m-1" href="UserPanel.php?s=general science" role="button">General Science</a>

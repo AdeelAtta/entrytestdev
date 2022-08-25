@@ -14,12 +14,8 @@ if(isset($_POST['sub_id']) ){
                 $score +=1;
             }
 
-
-          
-
         }
     }
-    echo $score;
 
     $que = "SELECT * from scoretable where userName like '{$_SESSION['userName']}' AND subject = {$_POST['sub_id']} ";
     $res = mysqli_query($connection,$que);
@@ -31,6 +27,23 @@ if(isset($_POST['sub_id']) ){
 
         $q = "Insert into scoretable(userName,userCity,subject,score) VALUES('{$_SESSION['userName']}','{$_SESSION['city']}',{$_POST['sub_id']},{$score}) ";
         $r = mysqli_query($connection,$q);
+
+        $previousScore = 0;
+        $qu = "SELECT score from scoretable where userName like '{$_SESSION['userName']}' ";
+        $re = mysqli_query($connection,$qu);
+        if(mysqli_num_rows($re) > 0 ){
+            while($ro = mysqli_fetch_array($re)){
+
+                $previousScore = $previousScore + $ro['score'];
+            }
+
+        }
+
+        $total = $previousScore;
+
+        $que = "UPDATE scoretable SET total = '{$total}' where userName like '{$_SESSION['userName']}' ";
+        $res = mysqli_query($connection,$que);
+
         header( "Location: ../userpanel.php?ScoreAdded" );
         $score = null;
 

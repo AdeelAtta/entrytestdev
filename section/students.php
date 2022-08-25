@@ -29,10 +29,6 @@ $r = mysqli_query($connection,$q);
 
 
 ?>
-
-
-
-
       <!-- users-->
       
       <section class="section p-5 mt-10 " >
