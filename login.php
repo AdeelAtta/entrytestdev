@@ -75,10 +75,10 @@
 
           <!-- Submit button -->
           <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+          <div class="alert alert-secondary text-center">
+  <strong>Don't have Account?</strong>  <a href="signup.php">Create Account </a>
+</div>
 
-          <div class="divider d-flex align-items-center my-4">
-            <p class="text-center fw-bold mx-3 mb-0 text-muted"></p>
-          </div>
 
 
         </form>

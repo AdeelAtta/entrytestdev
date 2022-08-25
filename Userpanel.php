@@ -18,7 +18,7 @@ if(!isset($_SESSION['email'] )){
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title> Mock Test - Tick2Top</title>
+    <title>Online Mock Test - Tick2Top</title>
 
     <!-- Styles -->
     <link href="assets/css/page.min.css" rel="stylesheet">
@@ -27,13 +27,13 @@ if(!isset($_SESSION['email'] )){
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
     <link rel="icon" href="assets/img/favicon.png">
+
   </head>
 
   <body> 
   <?php include 'admin/db.php'; ?>
 
   <div class="jumbotron">
-
 
       <h1 >  Welcome  <strong><u><?php if(isset($_SESSION['userName'])){echo $_SESSION['userName']; }?></u> </strong>
       <?php  
@@ -51,10 +51,15 @@ if(isset($_SESSION['email'])){ ?>
   </div>
 </div>
 
+
+
+
     <!-- Main Content -->
     <main class="main-content">
       <div class="container">
         <div class="row">
+
+
 
 
 

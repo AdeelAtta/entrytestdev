@@ -1,14 +1,4 @@
-<?php 
-session_start();
-if(!isset($_SESSION['email'] )){
-  header('Location: login.php?invalid');
-}else if($_SESSION['auth'] == 'user'){
 
-
-  header('Location: userpanel.php');
-
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +29,17 @@ if(!isset($_SESSION['email'] )){
       <?php include('section/nav-bar.php'); ?>
     </nav>
     <!-- /.navbar -->
+    <?php 
 
+if(!isset($_SESSION['email'] )){
+  header('Location: login.php?invalid');
+}else if($_SESSION['auth'] == 'user'){
+
+
+  header('Location: userpanel.php');
+
+}
+?>
 
     <!-- Main Content -->
     <main class="main-content" >
@@ -50,7 +50,7 @@ if(!isset($_SESSION['email'] )){
               include 'section/updateData.php' ;
           }else if(isset($_GET['addMcqs'])){
               include 'section/addquiz.php' ;
-          }else if(isset($_GET['Students'])){
+          }else if(isset($_GET['students'])){
             include 'section/Students.php' ;
         }else{  
               include 'section/addData.php'; 

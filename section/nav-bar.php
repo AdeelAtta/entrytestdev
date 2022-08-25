@@ -1,5 +1,5 @@
  
-  
+  <?php session_start();?>
   <div class="container">
     <div class="navbar-left">
       <button class="navbar-toggler" type="button">&#9776;
@@ -68,14 +68,6 @@
           </a>
         </li>
 
-        <?php
-
-if(isset($_SESSION['email'])){ ?>
-        <li class="nav-item">
-          <a class="nav-link" href="admin/logout.php">Logout
-          </a>
-        </li>
-<?php } ?>
       </ul>
       <?php
 

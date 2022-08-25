@@ -80,7 +80,7 @@ if(mysqli_query($connection,$query)){
     <br>
     <?php if(isset($_GET['accountCreated'])){ ?>
 <div class="alert alert-success">
-  <strong>Account</strong> Created Successfully. <a href="login.php">Login here</a>
+  <strong>Account</strong> Created Successfully. Account will be activated in 24 hours.<a href="login.php">Login here</a>
 </div>
 
 
@@ -123,6 +123,9 @@ if(mysqli_query($connection,$query)){
 
           <!-- Submit button -->
           <button type="submit" class="btn btn-primary btn-lg btn-block">Create Account</button>
+          <div class="alert alert-secondary text-center">
+  <strong>Already have Account?</strong>  <a href="login.php">Login </a>
+</div>
 
 
         </form>

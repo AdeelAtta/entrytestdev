@@ -6,7 +6,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
     $password = mysqli_real_escape_string($connection,$_POST['password']);
     
-    $query = "SELECT * FROM amn WHERE email = '$email' ";
+    $query = "SELECT * FROM amn WHERE email = '$email' AND status = 'active' ";
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result) > 0 ){
         while($row = mysqli_fetch_array($result)){

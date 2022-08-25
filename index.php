@@ -80,6 +80,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <div class="row gap-y text-center">
 
+          <div class="col-md-4">
+              <a class="card px-6 py-8 shadow-11 hover-shadow-9 text-default border" href="signup.php">
+                <p><i class="ti-agenda lead-7 text-primary"></i></p>
+                <h5 class="fw-500 my-4">Online Mock Test</h5>
+                <p class="mb-0">Create Account and Solve the mock test</p>
+              </a>
+            </div>
+
             <div class="col-md-4">
               <a class="card px-6 py-8 shadow-11 hover-shadow-9 text-default border" href="mcqs.php">
                 <p><i class="ti-book lead-7 text-primary"></i></p>
@@ -96,13 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </a>
             </div>
 
-            <div class="col-md-4">
-              <a class="card px-6 py-8 shadow-11 hover-shadow-9 text-default border" href="#">
-                <p><i class="ti-agenda lead-7 text-primary"></i></p>
-                <h5 class="fw-500 my-4">Pastpapers</h5>
-                <p class="mb-0">Time to test your Knowledge & Solve the available PastPapers.</p>
-              </a>
-            </div>
+
           </div>
         </div>
       </section>
