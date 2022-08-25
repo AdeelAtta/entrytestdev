@@ -34,10 +34,11 @@ if(isset($_POST['userName']) && isset($_POST['email'])){
 
 include 'admin/db.php';
 
-$userName      = strtoupper($_POST['userName']);
-$email         = $_POST['email'];
-$pass          = $_POST['password'];
-$city          = $_POST['city'];
+
+$userName      =  mysqli_real_escape_string($connection,$_POST['userName']);
+$email         = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+$pass          = mysqli_real_escape_string($connection,$_POST['password']);
+$city          = mysqli_real_escape_string($connection,$_POST['city']);
 
 
 
@@ -80,7 +81,7 @@ if(mysqli_query($connection,$query)){
     <br>
     <?php if(isset($_GET['accountCreated'])){ ?>
 <div class="alert alert-success">
-  <strong>Account</strong> Created Successfully. Account will be activated in 24 hours.<a href="login.php">Login here</a>
+<strong>Account Created Successfully</strong><br> Account will be activated within 24 hours.
 </div>
 
 

@@ -16,7 +16,19 @@ $r = mysqli_query($connection,$q);
 
 
 
-}?>
+}else if(isset($_GET['d'])){
+
+$q = "delete from amn where email = '{$_GET['d']}' ";
+$r = mysqli_query($connection,$q);
+
+
+}
+
+
+
+
+
+?>
 
 
 
@@ -26,7 +38,7 @@ $r = mysqli_query($connection,$q);
       <section class="section p-5 mt-10 " >
 
       <div class="container">
-  <h2>Students Table</h2>
+  <h2 >Students Table</h2>
   <p>Lists of Accounts Created:</p>            
   <table class="table table-bordered">
     <thead>
@@ -57,7 +69,7 @@ $r = mysqli_query($connection,$q);
         }else{
             echo "<td><a class='btn btn-outline-success' href='adminpanel.php?students&s=active&u={$row['email']}'>Active Now</a></td>";
         } ?> 
-          <td><a class="btn btn-outline-danger">Delete</a></td>
+          <td><a class="btn btn-outline-danger" href="adminpanel.php?students&d=<?php echo $row['email'];?>">Delete</a></td>
       </tr>
 
 
