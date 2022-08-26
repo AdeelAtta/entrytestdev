@@ -59,7 +59,6 @@
           <div class="form-outline mb-4">
           <label class="form-label" for="form1Example13">Email address</label>
             <input type="email" id="form1Example13" class="form-control form-control-lg" name="email" required />
-            
           </div>
 
           <!-- Password input -->

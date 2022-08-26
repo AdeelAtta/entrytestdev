@@ -62,7 +62,7 @@
     </main><!-- /.main-content -->
 
 
-    <?php include 'section'; ?>
+    <?php include 'section/footer.php'; ?>
 
   </body>
 </html>

@@ -22,9 +22,14 @@
 
 <body>
 <div style="text-align:center;" class="col-md-8 col-lg-7 col-xl-6">
-      <a href="index.php"><img  style="width:150px; height:150px; margin-top:20px; " src="../assets/img/favicon.png"  alt="tick2top logo"></a>
-      <h1 style="color:#E0668B;">ScoreBoard</h1> 
+      <a href="../index.php"><img  style="width:150px; height:150px; margin-top:20px; " src="../assets/img/favicon.png"  alt="tick2top logo"></a>
+   
+      <div class="divider d-flex align-items-center my-4">
+            <h1 style="color:#E0668B;" class="text-center fw-bold mx-3 mb-0 text-muted">Score<strong style="color:#3D1462;">Board</strong></h1>
+          </div>
+      
     </div>
+ 
 
       <div class="container">
         <div class="row" >

@@ -94,7 +94,7 @@ if(mysqli_query($connection,$query)){
 
 <?php  } ?>
           <div class="form-outline mb-4">
-          <label class="form-label" for="form1Example1"><h6><strong>Username:</strong></h6></label>
+          <label class="form-label" for="form1Example1">Username:</label>
             <input type="text" id="form1Example1" class="form-control form-control-lg" name="userName" value="<?php if(isset($_GET['u'])){
                 echo $_GET['u'];
             }?>" required/>
@@ -102,7 +102,7 @@ if(mysqli_query($connection,$query)){
 
           <div class="form-outline mb-4">
 
-          <label class="form-label" for="form1Example2"><h6><strong>Email address:</strong></h6></label>
+          <label class="form-label" for="form1Example2">Email address:</label>
             <input type="email" id="form1Example2" class="form-control form-control-lg" name="email" value="<?php if(isset($_GET['e'])){
                 echo $_GET['e'];
             }?>" required/>
@@ -110,12 +110,12 @@ if(mysqli_query($connection,$query)){
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-          <label class="form-label" for="form1Example3"><h6><strong>Set New Password:</strong></h6></label>
+          <label class="form-label" for="form1Example3">Set New Password:</label>
             <input type="password" id="form1Example3" class="form-control form-control-lg" name="password" required/>
           </div>
 
           <div class="form-outline mb-4">
-          <label class="form-label" for="form1Example4"><h6><strong>City:</strong></h6></label>
+          <label class="form-label" for="form1Example4">City:</label>
             <input type="text" id="form1Example4" class="form-control form-control-lg" name="city" value="<?php if(isset($_GET['c'])){
                 echo $_GET['c'];
             }?>" required/>
@@ -125,7 +125,7 @@ if(mysqli_query($connection,$query)){
           <!-- Submit button -->
           <button type="submit" class="btn btn-primary btn-lg btn-block">Create Account</button>
           <div class="alert alert-secondary text-center">
-  <strong>Already have Account?</strong>  <a href="login.php">Login </a>
+  <strong>Already have Account?</strong>  <a href="login.php">Login</a>
 </div>
 
 
