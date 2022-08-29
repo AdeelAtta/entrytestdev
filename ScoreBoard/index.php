@@ -34,7 +34,7 @@
       <div class="container">
         <div class="row" >
             <br>
-        <table style="margin: 0 auto;">
+        <table style="margin: 30px auto; max-height:100px; overflow: scroll;">
             
             <thead>
                 <tr>
@@ -49,6 +49,7 @@
 
                 <?php 
                 include '../admin/db.php';
+
                 $query = "SELECT distinct(userName),userCity,total from scoretable order by total desc";
                 $result = mysqli_query($connection,$query);
                 if(mysqli_num_rows($result) > 0){
@@ -65,7 +66,7 @@
                       <?php   }  }
 
 
-                         ?>
+                        ?>
 
             </tbody>
         </table>

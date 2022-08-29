@@ -7,7 +7,17 @@
       </div>
 </section>
 
+<?php 
 
+if(isset($_GET['de']) && $_GET['de'] !== ''){
+
+$qu = "DELETE FROM questions where q_id = {$_GET['de']} ";
+$re = mysqli_query($connection,$qu);
+header("Location: adminpanel.php?addMcqs&mcqDeleted#questions");
+
+}
+
+?>
 
       <!-- Add MCQS-->
       
@@ -61,9 +71,13 @@
             <div class="form-group col-sm-6 col-xl-3">
               <input class="form-control form-control-lg" type="text" name="option4" placeholder="Option 4">
             </div>
-            <div class="form-group col-sm-6 col-xl-12">
+            <div class="form-group col-sm-6 col-xl-6">
               <input class="form-control form-control-lg" type="text" name="correctoption" placeholder="Correct Option">
             </div>
+            <div class="form-group col-sm-6 col-xl-6">
+              <input class="form-control form-control-lg" type="number" name="testNo" placeholder="Test No" value="1">
+            </div>
+           
            
             <div class="form-group col-sm-6 col-xl-12 text-center">
               <button class="btn btn-xl btn-block btn-primary" type="submit">Add Quiz</button>
@@ -73,3 +87,59 @@
         </div>
       </section>
       <hr class="border border-primary border-2 opacity-50">
+      <hr class="border border-primary border-2 opacity-50">
+
+
+
+
+
+       <!-- users-->
+      
+       <section class="section p-5 mt-10 " >
+
+<div class="container">
+<h2 id="questions">Questions list</h2>
+<p>Lists of Questions added:</p> 
+<?php if(isset($_GET['mcqDeleted'])){ ?>   
+<div class="text-center">
+        <i class="far fa-file-alt fa-4x mb-3 text-primary"></i>
+        <div class="alert alert-danger">
+            Question Deleted <strong>Successfully!</strong>
+        </div>
+      </div>  
+      <?php }?>
+      
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Qno#</th>
+  <th>Question</th>
+  <th>Delete Account</th>
+</tr>
+</thead>
+<tbody>
+
+<?php 
+$query = "SELECT * FROM questions order by q_id desc";
+$result = mysqli_query($connection,$query);
+if(mysqli_num_rows($result) > 0){
+  $i=0;
+  while($row = mysqli_fetch_array($result)){ ?>
+
+          
+<tr>
+  <td><?php echo $row['q_id'];?></td>
+  <td><?php echo $row['question'];?></td>
+    <td><a class="btn btn-outline-danger" href="adminpanel.php?addMcqs&de=<?php echo $row['q_id'];?>">Delete</a></td>
+</tr>
+
+
+<?php    }
+}
+
+?>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="border border-primary border-2 opacity-50">

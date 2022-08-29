@@ -130,16 +130,9 @@ if(isset($_SESSION['email'])){ ?>
     <div class="modal-body">
 
 
-
-            
-      
-
-      
-
       <?php 
     
       while($row = mysqli_fetch_array($result)){ 
-        
         
         $que = "SELECT * from scoretable where userName like '{$_SESSION['userName']}' AND subject = {$row['sub_id']} ";
         $res = mysqli_query($connection,$que);
@@ -154,7 +147,6 @@ if(isset($_SESSION['email'])){ ?>
           All Questions carry Equal Marks
         </p>
       </div>
-
       <hr />
         
 
@@ -163,14 +155,14 @@ if(isset($_SESSION['email'])){ ?>
           <input type="number" name="sub_id" value="<?php echo $row['sub_id']; ?>"  hidden />
 
         <?php
-        $q = "Select * FROM questions where q_sub_id = {$row['sub_id']} order by RAND() LIMIT 30";
+        $q = "Select * FROM questions where q_sub_id = {$row['sub_id']} AND testNo = 1 order by RAND() LIMIT 30";
         $r = mysqli_query($connection,$q);
         
         if(mysqli_num_rows($r) > 0){
               $question = 1;
             while($ro = mysqli_fetch_array($r)){ ?>
 
-              <p class="text-justify"><strong>Qno: <?php echo $question++;?>  </strong><?php echo $ro['question']; ?></p>
+              <p class="text-justify"><strong>Qno: <?php echo $question++;?> # </strong><?php echo $ro['question']; ?></p>
 
             
               

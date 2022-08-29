@@ -49,7 +49,7 @@ $r = mysqli_query($connection,$q);
     <tbody>
 
     <?php 
-    $query = "SELECT * FROM amn where auth like 'user' order by status";
+    $query = "SELECT * FROM amn where auth like 'user' order by status desc";
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result) > 0){
 
