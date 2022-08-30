@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
             <div class="col-md-6 col-lg-3">
-              <a class="card card-body border hover-shadow-6 text-center py-6" href="mailto:admin@tick2top.com">
+              <a class="card card-body border hover-shadow-6 text-center py-6" href="mailto:study@tick2top.com?subject=Hi%20Adeel!">
                 <p><i class="fa fa-envelope lead-7 text-lighter"></i></p>
                 <h6 class="mb-0 mt-3">Email Us</h6>
               </a>
