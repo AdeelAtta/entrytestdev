@@ -75,23 +75,23 @@ if(isset($_SESSION['email'])){ ?>
             <aside class="sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1">
               <ul class="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
               <li class="nav-item">
-                  <a class="nav-link" href="UserPanel.php?s=english">English</a>
+                  <a class="nav-link" href="userpanel.php?s=english">English</a>
                 </li>
                 
                 <li class="nav-item">
-                  <a class="nav-link" href="UserPanel.php?s=general knowledge">General Knowledge</a>
+                  <a class="nav-link" href="userpanel.php?s=general knowledge">General Knowledge</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="UserPanel.php?s=general science">General Science</a>
+                  <a class="nav-link" href="userpanel.php?s=general science">General Science</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="UserPanel.php?s=simple Arithmetic">Simple Arithmatic</a>
+                  <a class="nav-link" href="userpanel.php?s=simple Arithmetic">Simple Arithmatic</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="UserPanel.php?s=Intelligent Quotient">Intelligence Quotient</a>
+                  <a class="nav-link" href="userpanel.php?s=Intelligent Quotient">Intelligence Quotient</a>
                 </li>
 
               </ul>
@@ -251,11 +251,11 @@ if(isset($_SESSION['email'])){ ?>
   </div>
 </div>
               <div class="row d-block w-100 text-center">
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=english" role="button">English</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=general knowledge" role="button">General Knowledge</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=general science" role="button">General Science</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=simple Arithmetic" role="button">Simple Arithmatic</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=Intelligent Quotient" role="button">Intelligence Quotient</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=english" role="button">English</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=general knowledge" role="button">General Knowledge</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=general science" role="button">General Science</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=simple Arithmetic" role="button">Simple Arithmatic</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=Intelligent Quotient" role="button">Intelligence Quotient</a>
                 <hr>
               </div>
 
@@ -288,11 +288,11 @@ if(isset($_SESSION['email'])){ ?>
 
                <?php } ?>
 
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=english" role="button">English</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=general knowledge" role="button">General Knowledge</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=general science" role="button">General Science</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=simple Arithmetic" role="button">Simple Arithmatic</a>
-                <a class="btn btn-outline-info m-1" href="UserPanel.php?s=Intelligent Quotient" role="button">Intelligence Quotient</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=english" role="button">English</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=general knowledge" role="button">General Knowledge</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=general science" role="button">General Science</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=simple Arithmetic" role="button">Simple Arithmatic</a>
+                <a class="btn btn-outline-info m-1" href="userpanel.php?s=Intelligent Quotient" role="button">Intelligence Quotient</a>
               </div>
             </div>
           </article>

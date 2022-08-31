@@ -51,7 +51,7 @@ if(!isset($_SESSION['email'] )){
           }else if(isset($_GET['addMcqs'])){
               include 'section/addquiz.php' ;
           }else if(isset($_GET['students'])){
-            include 'section/Students.php' ;
+            include 'section/students.php' ;
         }else{  
               include 'section/addData.php'; 
               }?>
