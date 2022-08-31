@@ -4,15 +4,16 @@ if(isset($_POST['sub_id']) ){
 
     include 'db.php';
     $score = 0;
-    $query  = "Select * FROM questions where q_sub_id = {$_POST['sub_id']} LIMIT 25";
+    $query  = "Select * FROM questions where q_sub_id = {$_POST['sub_id']} ";
     $result = mysqli_query($connection,$query);
     if(mysqli_num_rows($result) > 0){
         
         while($row = mysqli_fetch_array($result)){
 
+            if(isset($_POST[$row['q_id']])){
             if($row['correctoption'] == $_POST[$row['q_id']]){
                 $score +=1;
-            }
+            }}
 
         }
     }
